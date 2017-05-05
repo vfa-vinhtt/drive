@@ -3,10 +3,10 @@
 ## Tất cả component cho sp viết ở đây:	
 	/resources/assets/typescript/sp/
 - Khai báo component, services, directive trong AppModule của SP: **app-sp.module.ts**
-- SP wireframe:
+- wireframe:
    ![alt text](https://docs.google.com/drawings/d/107XOIzitgdibAsLQtvsYN2yOawTK6oWPbnSLyMDXvxw/pub?w=745&amp;h=687)
-- Dev chỉ cần code cho phần chức năng chính để ipply vào **Router Outlet** 
-
+- Dev chỉ cần code cho phần chức năng chính để  apply vào **Router Outlet** 
+- Phần còn lại sẽ  được quản lý bởi MainServices (xem tiếp phần main.service.ts bên dưới)
 ## Ngoài ra các service, directive, pipe viết ở các folder tương ứng:
 	/resources/assets/typescript/services
 	/resources/assets/typescript/pipes
@@ -34,9 +34,9 @@ setLayoutProps(option);
 ```javascript
     ngOnInit() {
         this.mainService.setLayoutProps({
-            title:'マイルート会員登録',
-            hide_search:true,
-            hide_tabs:true
+            title:'マイルート会員登録',     // title tương ứng
+            hide_search:true,           // ẩn search
+            hide_tabs:true              // ẩn tabs
         })
     }
 ```
@@ -52,4 +52,6 @@ setLayoutProps(option);
 ```javascript
     this.mapService.showMap()
 ```
-	
+___
+
+![alt text](https://docs.google.com/drawings/d/1DNysEHAI-F3XAQ8ksrVc95M6ud4Ruf-NTcmGQlAy3bw/pub?w=387&amp;h=713)
